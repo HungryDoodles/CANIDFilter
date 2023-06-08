@@ -33,7 +33,7 @@ int Sink::Send(const char* data, int length)
 
 
 #endif
-#if USE_UNIX_SOCK
+#ifdef USE_UNIX_SOCK
 
 Sink::Sink(const char* addr, int16_t port)
 {
